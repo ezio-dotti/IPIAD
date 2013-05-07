@@ -1,3 +1,1 @@
-INDEX VERSION 1.126+C:\Studiofarma\IpiadStf\IPIAD\.metadata\.plugins\org.eclipse.jdt.core
-185725469.index
-3770943972.index
+INDEX VERSION 1.126+C:\IPIAD\IPIAD\.metadata\.plugins\org.eclipse.jdt.core
