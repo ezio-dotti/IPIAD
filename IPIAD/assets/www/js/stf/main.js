@@ -33,20 +33,7 @@ function onError(error) {
           'message: ' + error.message + '\n');
 }
 
-function GetPiadinerie(latitudine, longitudine, callbackFunction) {
-    var arrayPiadinerie = [];
-
-    for (var i = 0; i < 10; i++) {
-        var piadineria = new Piadineria(i, "Città " + i, "Indirizzo " + i, "Lat " + i, "Long " + i, "Provincia " + i, "Piadineria " + i, "Regione " + i,i*10,i*5);
-        arrayPiadinerie.push(piadineria);
-    }
-    GlobalPiadinerie = arrayPiadinerie;
-
-    callbackFunction();
-}
-
 function LoadPiadinerie() {
-     
 
     var content = "";
     
