@@ -14,71 +14,43 @@
 </head>
 <body data-content-theme="b">
     <!-- Home -->
-    <div data-role="page" id="page1">
+    <div data-role="page" id="localizzazione">
         <div data-theme="a" data-role="header">
-            <h3>IPIAD CLIENT</h3>
+            <h3>IPIAD CLIENT 1.0.2</h3>
         </div>
         <img src="css/images/IPIAD.jpg" width="100%" />
         <div data-role="content">
         </div>
 
-        <div data-role="footer" style="overflow: hidden;" data-position="fixed" >
+        <div data-role="footer" style="overflow: hidden;" data-position="fixed">
             <h4 style="text-align: center;">Studiofarma S.r.l.</h4>
             <div data-role="navbar">
                 <ul>
                     <li><a class="BtnEsci" href="#">Esci</a></li>
-                    <li><a href="#page2" data-icon="arrow-r" class="ui-btn-active">Continua</a></li>
+                    <li><a href="#piadinerie" data-icon="arrow-r" class="ui-btn-active">Continua</a></li>
                 </ul>
             </div>
             <!-- /navbar -->
         </div>
         <!-- /footer -->
 
-
     </div>
 
-
-
-    <div data-role="page" id="page2">
+    <div data-role="page" id="piadinerie">
         <div data-theme="a" data-role="header">
             <h3>Scegli la piadineria
             </h3>
         </div>
         <div data-role="content">
 
-            <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
-                <li class="ui-li ui-li-static ui-btn-up-c ui-first-child">
-                    <p class="ui-li-aside ui-li-desc"><strong>6:24</strong>PM</p>
-                    <h3 class="ui-li-heading">Stephen Weber</h3>
-                    <p class="ui-li-desc"><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
-                    <p class="ui-li-desc">Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
+            <ul id="listapiadinerie" data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
 
-                </li>
-                <li class="ui-li ui-li-static ui-btn-up-c ui-last-child">
-                    <p class="ui-li-aside ui-li-desc"><strong>9:18</strong>AM</p>
-                    <h3 class="ui-li-heading">jQuery Team</h3>
-                    <p class="ui-li-desc"><strong>Boston Conference Planning</strong></p>
-                    <p class="ui-li-desc">In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c"><a href="#dettaglioPiadineria" class="ui-link-inherit"><p class="ui-li-aside ui-li-desc"><strong>1</strong> km <br />Percorrenza: <strong>9</strong> min</p><h3 class="ui-li-heading">Piadineria A</h3><p class="ui-li-desc"><strong>Viale dei Mille 69, Brescia</strong></p></a></li>
 
-                </li>
-
-                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
-                    <!--<div class="ui-btn-inner ui-li">-->
-                    <!--<div class="ui-btn-text">-->
-                    <a href="#page3" class="ui-link-inherit">
-                        <p class="ui-li-aside ui-li-desc"><strong>9:18</strong>AM</p>
-                        <h3 class="ui-li-heading">jQuery Team</h3>
-                        <p class="ui-li-desc"><strong>Boston Conference Planning</strong></p>
-                        <p class="ui-li-desc">In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
-                    </a>
-                    <!--</div>-->
-                    <!--<span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>-->
-                    <!--</div>-->
-                </li>
             </ul>
 
             <div data-role="content">
-                <a data-role="button" href="#page1" data-icon="arrow-l" data-iconpos="left">Aggiorna</a>
+                <a data-role="button" href="#localizzazione" data-icon="arrow-l" data-iconpos="left" class="BtnInit">Aggiorna</a>
             </div>
 
             <div data-role="content">
@@ -94,16 +66,16 @@
         </div>
     </div>
 
-    <div data-role="page" id="page3">
+    <div data-role="page" id="dettaglioPiadineria">
         <div data-theme="a" data-role="header">
             <h3>DETTAGLIO PIADINERIA</h3>
         </div>
         <div data-role="content">
-            <a data-role="button" href="#page4" data-icon="arrow-r" data-iconpos="right">Continua
+            <a data-role="button" href="#menuPiadine" data-icon="arrow-r" data-iconpos="right">Continua
             </a>
         </div>
         <div data-role="content">
-            <a data-role="button" href="#page2" data-icon="arrow-l" data-iconpos="left">Indietro
+            <a data-role="button" href="#piadinerie" data-icon="arrow-l" data-iconpos="left">Indietro
             </a>
         </div>
         <div data-theme="" data-role="footer" data-position="fixed">
@@ -114,14 +86,13 @@
         </div>
     </div>
 
-
-    <div data-role="page" id="page4">
+    <div data-role="page" id="menuPiadine">
         <div data-theme="a" data-role="header">
             <h3>MENU' PIADINE</h3>
         </div>
 
         <div data-role="content">
-            <a data-role="button" href="#page3" data-icon="arrow-l" data-iconpos="left">Indietro
+            <a data-role="button" href="#dettaglioPiadineria" data-icon="arrow-l" data-iconpos="left">Indietro
             </a>
         </div>
 
@@ -144,7 +115,7 @@
             <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
                 <!--<div class="ui-btn-inner ui-li">-->
                 <!--<div class="ui-btn-text">-->
-                <a href="#page3" class="ui-link-inherit">
+                <a href="#dettaglioPiadineria" class="ui-link-inherit">
                     <p class="ui-li-aside ui-li-desc"><strong>9:18</strong>AM</p>
                     <h3 class="ui-li-heading">jQuery Team</h3>
                     <p class="ui-li-desc"><strong>Boston Conference Planning</strong></p>
@@ -157,7 +128,7 @@
         </ul>
 
         <div data-role="content">
-            <a data-role="button" href="#page5" data-icon="arrow-r" data-iconpos="right">Conferma
+            <a data-role="button" href="#consegnaPiadine" data-icon="arrow-r" data-iconpos="right">Conferma
             </a>
         </div>
 
@@ -168,14 +139,13 @@
         </div>
     </div>
 
-
-    <div data-role="page" id="page5">
+    <div data-role="page" id="consegnaPiadine">
         <div data-theme="a" data-role="header">
             <h3>CONSEGNA</h3>
         </div>
 
         <div data-role="content">
-            <a data-role="button" href="#page4" data-icon="arrow-l" data-iconpos="left">Indietro
+            <a data-role="button" href="#menuPiadine" data-icon="arrow-l" data-iconpos="left">Indietro
             </a>
         </div>
 
@@ -192,9 +162,8 @@
             <input id="time" class="ui-input-text ui-body-c" type="time" value="" name="time">
         </div>
 
-
         <div data-role="content">
-            <a data-role="button" href="#page6" data-icon="arrow-r" data-iconpos="right">Conferma
+            <a data-role="button" href="#confermaOrdine" data-icon="arrow-r" data-iconpos="right">Conferma
             </a>
         </div>
 
@@ -206,7 +175,7 @@
         </div>
     </div>
 
-    <div data-role="page" id="page6">
+    <div data-role="page" id="confermaOrdine">
         <div data-theme="a" data-role="header">
             <h3>CONFERMA ORDINE</h3>
         </div>
@@ -218,7 +187,7 @@
         <label for="name">Presso la piadineria PINCOPALLA Via Dei Mille n.69 Brescia</label>
 
         <div data-role="content">
-            <a class="BtnEsci" data-role="button" href="#page6" data-icon="arrow-r" data-iconpos="right">Chiudi
+            <a class="BtnEsci" data-role="button" href="#" data-icon="arrow-r" data-iconpos="right">Chiudi
             </a>
         </div>
 
@@ -229,8 +198,6 @@
             </span>
         </div>
     </div>
-
-
 
 </body>
 </html>

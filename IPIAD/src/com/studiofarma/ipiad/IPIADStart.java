@@ -17,8 +17,7 @@ public class IPIADStart extends DroidGap {
         
         this.clearCache();
         this.appView.getSettings().setRenderPriority( RenderPriority.HIGH );
-        
-        
+                
         super.loadUrl("file:///android_asset/www/start.html",1000);
     }
 
