@@ -46,6 +46,7 @@ function GetPiadinerie(latitudine, longitudine, callbackFunction) {
 }
 
 function LoadPiadinerie() {
+     
 
     var content = "";
     
